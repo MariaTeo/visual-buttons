@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Funky buttons that play videos!</title>
+		<style>
+			button {
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+				justify-content: center;
+				padding: 0.5rem;
+				gap: 1rem;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>Video playing buttons</h1>
+
+		<p>Let's enjoy some simple HTML, CSS and JavaScript</p>
+
+		<p>
+			If you click on the buttons below you will see how a video will be
+			displayed and when it is finished it will vanish.
+		</p>
+
+		<p><b>Have fun!</b></p>
+
+		<button id="hello-everyone">
+			Hello, everyone!
+			<video
+				id="hello"
+				src="./hello.mov"
+				style="border: 3px solid; width: 0; display: none"
+			></video>
+		</button>
+
+		<br />
+
+		<button id="this">
+			This is Maria.
+			<video
+				id="maria"
+				src="./maria.mov"
+				style="border: 3px solid; width: 0; display: none"
+			></video>
+		</button>
+
+		<br />
+
+		<button id="see">
+			See ya!
+			<video
+				id="ya"
+				src="./see-ya.mov"
+				style="border: 3px solid; width: 0; display: none"
+			></video>
+		</button>
+	</body>
+
+	<script>
+		const helloPlayer = document.querySelector('#hello');
+		const mariaPlayer = document.querySelector('#maria');
+		const seePlayer = document.querySelector('#ya');
+
+		const helloHover = document.querySelector('#hello-everyone');
+		helloHover.addEventListener('click', () => {
+			helloPlayer.play();
+			helloPlayer.style.display = 'block';
+			helloPlayer.style.width = '550px';
+
+			setTimeout(() => {
+				helloPlayer.style.display = 'none';
+				helloPlayer.style.width = '0';
+			}, 1000);
+
+			console.log('Hello, everyone!');
+		});
+
+		const mariaHover = document.querySelector('#this');
+		mariaHover.addEventListener('click', () => {
+			mariaPlayer.play();
+			mariaPlayer.style.display = 'block';
+			mariaPlayer.style.width = '550px';
+
+			setTimeout(() => {
+				mariaPlayer.style.display = 'none';
+				mariaPlayer.style.width = '0';
+			}, 1150);
+
+			console.log('This is Maria.');
+		});
+
+		const seetHover = document.querySelector('#see');
+		seetHover.addEventListener('click', () => {
+			seePlayer.play();
+			seePlayer.style.display = 'block';
+			seePlayer.style.width = '550px';
+
+			setTimeout(() => {
+				seePlayer.style.display = 'none';
+				seePlayer.style.width = '0';
+			}, 650);
+
+			console.log('See ya!');
+		});
+	</script>
+</html>
