@@ -128,3 +128,5 @@ I did a bit of research as well. Check out these useful links:
 [video hidden property](https://www.google.com/search?q=video+hidden+property)
 
 [javascript video play](https://www.tutorialspoint.com/how-to-use-javascript-to-play-a-video-on-mouse-hover-and-pause-on-mouseout)
+
+[javascript video end](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/ended_eventst)
