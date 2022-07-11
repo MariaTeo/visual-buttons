@@ -10,6 +10,8 @@
 
 [CSS](#css)
 
+[Useful links](#useful-links)
+
 # Let's create some visual buttons
 
 I will play around with HTML and CSS to create some buttons that when you hover over them they will display a video.
@@ -90,6 +92,14 @@ helloHover.addEventListener('click', () => {
 
 # CSS
 
+I wanted to do the style in two ways:
+
+- inline (the one I presented above)
+  and
+- internal
+
+### Internal CSS
+
 I have included as well just a little bit of style to those buttons inside a `<style>` tag.
 
 ### The code looks like this:
@@ -106,3 +116,15 @@ I have included as well just a little bit of style to those buttons inside a `<s
   }
 </style>
 ```
+
+# Useful links
+
+I did a bit of research as well. Check out these useful links:
+
+[setTimeout()](https://www.w3schools.com/jsref/met_win_settimeout.asp)
+
+[prop style visibility](https://www.w3schools.com/jsref/prop_style_visibility.asp)
+
+[video hidden property](https://www.google.com/search?q=video+hidden+property)
+
+[javascript video play](https://www.tutorialspoint.com/how-to-use-javascript-to-play-a-video-on-mouse-hover-and-pause-on-mouseout)
